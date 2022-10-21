@@ -30,7 +30,7 @@
 		var langStr = (navigator.language || navigator.userLanguage);
 		if(langStr === 'zh-CN')
 		{
-			location.href = '/index_' + langStr + '.html';
+			location.replace('./index_' + langStr + '.html');
 		}
 	        $(document).ready(function(){
                 jQuery.expr[':'].contains = function(a, i, m) {
